@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Закрытый клуб</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginBlock">
+  <h1>Здравствуйте</h1>
+  <p>
+    Закрытый клуб студентов.
+    Здесь мы проводим опросы, обсуждаем предметы и делимся тем, что действительно работает.
+    Анонимно и главное без личных данных.
+  </p>
+  <input type="password" id="passInput" placeholder="Введите пароль">
+  <button onclick="checkCode()">Войти</button>
+</div>
+
+<div id="mainContent" style="display: none;">
+  <h2>Добро пожаловать</h2>
+  <button onclick="goToPage()">Опросы</button>
+  <button onclick="goToPage4()">Советы</button>
+</div>
+
+<div id="page3" style="display: none;">
+  <textarea id="messageInput" placeholder="Введите текст"></textarea>
+  <button onclick="goBackFromPage3()">Вернуться назад</button>
+  <button onclick="sendToPage5()">Отправить</button>
+</div>
+
+<div id="page5" style="display: none;">
+  <span id="displayWord"></span>
+  <button onclick="goBack()">Вернуться назад</button>
+</div>
+
+<div id="page4" style="display: none;">
+  <button onclick="goToPage6()">Английский</button>
+  <button onclick="goBackFromPage4()">Вернуться назад</button>
+</div>
+
+<div id="page6" style="display: none;">
+  <h3>Советы для английского языка</h3>
+  <p>
+Английский язык — это система правил, слов и структур, которые позволяют общаться, выражать мысли и понимать других. Для эффективного изучения важно понимать грамматику, лексику, времена и структуру предложений. Также полезно знать формулы построения предложений, чтобы быстро создавать правильные фразы.
+    Present Simple — для фактов и привычек.
+    Формула: Subject + V(s/es)
+    Пример: She reads books every day.
+
+    Present Continuous — для действий, происходящих прямо сейчас.
+    Формула:
+    Subject + am/is/are + V-ing
+    Пример: I am learning English now.
+
+Present Continuous — для действий, происходящих прямо сейчас.
+    Формула:
+    Subject + am/is/are + V-ing
+    Пример: I am learning English now.
+
+    Past Simple — для действий, завершённых в прошлом.
+    Формула: Subject + V2
+    Пример: They visited the museum yesterday.
+
+    Future Simple — для действий, которые произойдут в будущем.
+    Формула: Subject + will + V
+    Пример: We will travel next week.
+
+    💡 Совет: для начала учи Present Simple и Continuous, потом Past и Future.
+  </p>
+  <button onclick="goBackFromPage6()">Вернуться назад</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
