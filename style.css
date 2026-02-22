@@ -1,0 +1,270 @@
+#loginBlock {
+display: flex;
+flex-direction: column;
+ align-items: center;    
+ width: 90%;
+ max-width: 350px;
+}
+
+input, button {
+  padding: 5px 2px;
+  border-radius: 20px;
+}
+
+/* Общий фон страницы с градиентом */
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+/* Блок входа — эффект матового стекла */
+#loginBlock, #mainContent {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 100px;
+  border-radius: 22px;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+/* Красивое поле ввода */
+input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Кнопка с эффектом при наведении */
+button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  background: #ff007b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background: #ff4097;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 0, 123, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+p {
+  font-family: sans-serif;
+  line-height: 2.0;
+  margin-bottom: 1.5em;
+  color: white;
+  font-size: 21px;
+}
+
+/* Выравниваем содержимое всех страниц по центру в колонку */
+#mainContent, #page3, #page4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 50px;
+}
+
+/* Наводим красоту в текстовом поле */
+textarea {
+  width: 80%;
+  max-width: 300px;
+  height: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-family: sans-serif;
+}
+
+/* Делаем все кнопки одинаковыми и красивыми */
+button {
+  width: 200px;
+  padding: 12px;
+  background-color: #ff005d;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#chatBox {
+  width: 90%;
+  max-width: 400px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  overflow-y: auto;
+  margin: 10px auto;
+  text-align: left;
+  color: white;
+  border: 1px solid #ffffff33;
+}
+
+.chat-input-area {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#chatInput {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.back-btn {
+  margin-top: 20px;
+  background-color: #555 !important;
+}
+
+/* Стиль контейнера 6-й страницы */
+#page6 {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  
+  width: 85%;
+  max-width: 320px;
+  padding: 40px 20px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+#page6 h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.3;
+}
+
+#page6 p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#page6 button {
+  width: 100%;
+  padding: 18px;
+  background-color: #ff007b;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#page6 button:active {
+  transform: scale(0.96);
+}
+
+/* Общий фон для всех страниц */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #7b94f8 0%, #a265f0 100%);
+  color: white;
+}
+
+/* Стили конкретно для 5-й страницы */
+#page5 {
+  width: 85%;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 40px 20px;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#displayWord {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#page5 button {
+  width: 100%;
+  padding: 18px;
+  background-color: #ff007b;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 0, 123, 0.3);
+  transition: transform 0.2s;
+}
+
+#page5 button:active {
+  transform: scale(0.96);
+}
