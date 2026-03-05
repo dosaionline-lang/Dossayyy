@@ -1,3 +1,31 @@
+function nextPage() {
+    const name = document.getElementById('user_name').value;
+    const email = document.getElementById('user_email').value;
+    const pass = document.getElementById('user-password').value;
+
+    // 1. Проверка на пустые поля
+    if (name.trim() === "" || email.trim() === "" || pass.trim() === "") {
+        alert("Заполните все поля!");
+        return;
+    }
+
+    // 2. Проверка длины имени (например, не меньше 3 символов)
+    if (name.length < 3) {
+        alert("Имя слишком короткое!");
+        return;
+    }
+
+    // 3. Проверка длины пароля (не меньше 8 символов)
+    if (pass.length < 8) {
+        alert("Пароль должен содержать минимум 8 символов!");
+        return;
+    }
+
+    // Если все проверки пройдены — переключаем экран
+    document.getElementById('goToLogin').style.display = 'none';
+    document.getElementById('loginBlock').style.display = 'block';
+}
+
 function checkCode() {
   const secret = "7777"; 
   const input = document.getElementById('passInput').value;
